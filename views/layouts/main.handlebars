@@ -25,26 +25,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-5QQTQ3F');</script>
 <!-- End Google Tag Manager -->
 
-<script>
-     dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
-dataLayer.push({
-  'event': 'purchase',
-  'ecommerce': {
-      'transaction_id': 'T12345',
-      'affiliation': 'Online Store',
-      'value': '{{dlv - ecommerce.value}}',
-      'tax': '0',
-      'shipping': '{{dlv - ecommerce.shipping}}',
-      'currency': 'ZAR',
-      'items': [{
-        'item_name': '{{dlv - ecommerce.item.name}}',
-        'item_id': '12345',
-        'price': '{{dlv - item.price}}',
-        'quantity': 1
-      }]
-  }
-});
-    </script>
 </head>
 
 <body class="p-3 mb-2 bg-light text-dark">
