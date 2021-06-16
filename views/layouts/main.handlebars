@@ -3,6 +3,28 @@
 
 <head>
 
+<script>
+     dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+dataLayer.push({
+  'event': 'purchase',
+  'ecommerce': {
+      'transaction_id': 'T12345',
+      'affiliation': 'Online Store',
+      'value': '{{dlv - ecommerce.value}}',
+      'tax': '0',
+      'shipping': '{{dlv - ecommerce.shipping}}',
+      'currency': 'ZAR',
+      'items': [{
+        'item_name': '{{dlv - ecommerce.item.name}}',
+        'item_id': '12345',
+        'price': '{{dlv - item.price}}',
+        'quantity': 1
+      }, ]
+  }
+});
+    </script>
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
