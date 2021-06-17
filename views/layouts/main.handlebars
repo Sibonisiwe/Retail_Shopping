@@ -3,8 +3,8 @@
 
 <head>
 <script>
-dataLayer.push({ ecommerce: null });
-dataLayer.push({
+window.dataLayer = window.dataLayer || []; ​
+  dataLayer.push({
   'event': 'view_item',
   'ecommerce': {
     'items': [{
@@ -15,8 +15,8 @@ dataLayer.push({
   }
 });
 
-dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
-dataLayer.push({
+window.dataLayer = window.dataLayer || []; ​
+  dataLayer.push({
   'event': 'purchase',
   'ecommerce': {
       'transaction_id': '{{ecommerce.transaction.id}}',
