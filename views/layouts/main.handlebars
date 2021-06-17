@@ -14,6 +14,24 @@ dataLayer.push({
     }]
   }
 });
+
+dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+dataLayer.push({
+  'event': 'purchase',
+  'ecommerce': {
+      'transaction_id': '{{ecommerce.transaction.id}}',
+      'affiliation': 'Online Store',
+      'value': '{{dlv-ecommerce.value}}',
+      'tax': '0',
+      'shipping': 'free',
+      'currency': 'ZAR',
+      'items': [{
+        'item_name': '{{dlv-ecommerce.items}}',
+        'elementClasses':'btn btn-primary',
+      'elementId': '{{dlv-ecommerce.id}}'
+      }]
+  }
+});
 </script>
 
     <meta charset="UTF-8">
