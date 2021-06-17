@@ -8,7 +8,7 @@ dataLayer.push({
   'event': 'view_item',
   'ecommerce': {
     'items': [{
-      'elementClasses':'btn btn-primary',
+      'page_path':'/product',
       'elementId': '{{dlv-ecommerce.id}}',
       'quantity': '{{dlv-ecommerce.quantity}}'
     }]
@@ -26,9 +26,10 @@ dataLayer.push({
       'shipping': 'free',
       'currency': 'ZAR',
       'quantity': '{{dlv-ecommerce.quantity}}'
+      'page_path': '/payment'
       'items': [{
         'item_name': '{{dlv-ecommerce.items}}',
-        'elementClasses':'btn btn-primary',
+        'page_path':'product',
       'elementId': '{{dlv-ecommerce.id}}'
       }]
   }
