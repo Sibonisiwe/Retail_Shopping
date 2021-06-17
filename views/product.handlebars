@@ -1,5 +1,18 @@
 <head>
-
+window.dataLayer = window.dataLayer || [];
+  dataLayer.push({
+  'event': 'view_item',
+  'ecommerce': {
+    'items': [{
+      'page_path':'/product',
+      'item_name': '{{list.name}}', // Name or ID is required.
+      'item_id': '{{list.id}}',
+      'price': '{{list.cost}}',
+      'item_category': '{{list.category}}',
+     
+    }]
+  }
+});
 	<title>Accel-Shopping | Product/{{list.name}}</title>
 
 </head>
