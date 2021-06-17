@@ -10,26 +10,6 @@ window.dataLayer.push({
 'pageTitle': '{{page.title}}
 });
 
-
-window.dataLayer = window.dataLayer || []; ​
-  dataLayer.push({
-  'event': 'purchase',
-  'ecommerce': {
-      'transaction_id': '{{ecommerce.transaction.id}}',
-      'affiliation': 'Online Store',
-      'value': '{{dlv-ecommerce.value}}',
-      'tax': '0',
-      'shipping': 'free',
-      'currency': 'ZAR',
-      'quantity': '{{dlv-ecommerce.quantity}}'
-      'page_url': '/payment'
-      'items': [{
-        'item_name': '{{dlv-ecommerce.items}}',
-        'page_url':'/product',
-      'elementId': '{{dlv-ecommerce.id}}'
-      }]
-  }
-});
 </script>
 
     <meta charset="UTF-8">
