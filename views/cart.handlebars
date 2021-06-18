@@ -1,4 +1,20 @@
 <head>
+<script>
+dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+dataLayer.push({
+  'event': 'add_to_cart',
+  'ecommerce': {
+    'items': [{
+      'item_name': '{{list.name}}', 
+      'item_id': '{{list.id}}',
+      'price': '{{list.cost}}',
+      'item_category': '{{list.category}}',
+      'quantity': '{{list.quantity}}',
+      'value': '{{list.myTotal}}'
+    }]
+  }
+});
+</script>
 
 	<title>Accel-Shopping | Shopping-Cart</title>
 
